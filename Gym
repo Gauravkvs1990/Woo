@@ -4,3 +4,47 @@ Checking GitHub....
 
 Checking 2...
 Checking 3...
+
+/////////////////////////////
+checking 4...
+
+#include<iostream.h>
+#include<conio.h>
+class Parent
+{
+ public:
+ virtual void print()
+ {
+  cout<<"parent print()";
+ }
+ void show()
+ {
+  cout<<"parent show()";
+ }
+};
+
+class Child:public Parent
+{
+ public:
+ virtual void print()
+ {
+  cout<<"Child print()";
+ }
+ void show()
+ {
+  cout<<"child show()";
+ }
+};
+
+void main()
+{
+ clrscr();
+  Parent *p;
+  Child c;
+  p=&c;
+  p->print();
+  cout<<endl;
+  p->show();
+ getch();
+}
+/////////////////////////////
